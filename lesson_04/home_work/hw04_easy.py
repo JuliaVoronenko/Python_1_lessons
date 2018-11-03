@@ -6,10 +6,18 @@
 # квадратами элементов исходного списка
 # [0, 1, 2, 3] --> [0, 1, 4, 9]
 
+listA = [0, 1, 2, 3]
+listB = [i**2 for i in listA]
+
+print(listB)
 
 # Задание-2:
 # Даны два списка фруктов.
 # Получить список фруктов, присутствующих в обоих исходных списках.
+fruits1 = ["Яблоки", "Груши", "Сливы", "Бананы"]
+fruits2 = ["Яблоки", "Груши", "Персики"]
+result = set(fruits1) & set(fruits2)
+print(result)
 
 
 # Задание-3:
@@ -19,3 +27,22 @@
 # + Элемент неотрицательный
 # + Элемент не кратен 3
 
+listNums = [i for i in range(-10, 10)]
+newList = []
+for i in listNums:
+    matched = True
+
+    if i % 2 != 0:
+        matched = False
+
+    if i < 0:
+        matched = False
+
+    if i % 3 == 0:
+        matched = False
+
+    if matched:
+        newList.append(i)
+
+print(listNums)
+print(newList)
