@@ -4,13 +4,13 @@
 # И второй скрипт, удаляющий эти папки.
 import os
 
-for i in range(1, 10):
-    new_dir = ('dir_{}'.format(i))
-    os.mkdir(new_dir)
+# for i in range(1, 10):
+#     new_dir = ('dir_{}'.format(i))
+#     os.mkdir(new_dir)
 
 for i in range(1, 10):
     dir_delete = ('dir_{}'.format(i))
-    os.rmdir(dir_delete)
+   os.rmdir(dir_delete)
 
 
 
